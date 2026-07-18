@@ -50,5 +50,5 @@ Error: Model stopped because it reached the maximum output token limit. The resp
 
 you are supposed to increase `num_predict`, for that you are supposed
 to add `"num_predict": MAXTOKEN` next to `"id": "qwen3.6:latest"` in
-file `models.json` under `HOME_FOLDER/.pi/agent` directory.  Expect it
+file `models.json` under `HOME_FOLDER/.pi/agent` directory.  But it
 does not seem to work...

@@ -157,7 +157,7 @@ Feel free to modify the permissions as you see fit.
 
 ## Troubleshooting
 
-### Pi keep asking permissions on things that are allowed.
+### Pi keeps asking permissions on things that are allowed.
 
 TODO
 

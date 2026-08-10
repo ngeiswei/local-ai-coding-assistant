@@ -8,7 +8,8 @@ The current plan is to combine [Ollama](https://ollama.com) with
 ## Warnings
 
 It is recommended to run this in a docker container because Pi have
-access to write actions.
+access to write actions.  Alternatively, you can also use the
+[Permission System](#install_permission_system).
 
 ## Prerequsites
 

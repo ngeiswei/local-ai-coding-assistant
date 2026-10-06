@@ -20,7 +20,7 @@ up to date before running them.
    use [NVM](https://www.nvmnode.com/).  The command should be
    ```bash
    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.6/install.sh | bash
-   nvm install 24
+   nvm install 24   # you may need to source .bashrc or such
    ```
 2. Install [Ollama](https://ollama.com/). The command should be
    ```bash
@@ -78,6 +78,18 @@ under the `providers` field of `.pi/agent/models.json`.
 Once under Pi, you should be able to select such model(s) with the
 `/model` command.
 
+Note that if you have an account to a vendor it is often enough to
+configure `.pi/agent/auth.json` as such
+
+```
+{
+  "VENDOR": {
+    "type": "api_key",
+    "key": "API_KEY"
+  }
+}
+```
+
 ### Extensions
 
 Pi offers vast collection of [extensions](https://pi.dev/packages).
@@ -99,6 +111,13 @@ To install an extension, type
 ```bash
 pi install EXTENSION
 ```
+
+Extensions I am finding useful are:
+
+- [pi-cwd](https://pi.dev/packages/@harms-haus/pi-cwd)
+- [pi-stop](https://pi.dev/packages/pi-stop)
+- [pi-permission-system](https://pi.dev/packages/pi-permission-system),
+  see below for more information about its installation.
 
 #### Install permission system
 

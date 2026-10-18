@@ -112,10 +112,11 @@ To install an extension, type
 pi install EXTENSION
 ```
 
-Extensions I am finding useful are:
+Extensions I find useful are:
 
 - [pi-cwd](https://pi.dev/packages/@harms-haus/pi-cwd)
 - [pi-stop](https://pi.dev/packages/pi-stop)
+- [pi-sandbox](https://pi.dev/packages/pi-sandbox)
 - [pi-permission-system](https://pi.dev/packages/pi-permission-system),
   see below for more information about its installation.
 

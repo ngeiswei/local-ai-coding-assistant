@@ -175,6 +175,20 @@ in `.pi/agent/pi-permissions.jsonc`.
 
 Feel free to modify the permissions as you see fit.
 
+## Use Pi as MCP client
+
+You can easily connect to MCP servers with Pi.  For instance to
+connect to the [Ardour](https://ardour.org/) MCP server type in a
+terminal the following command:
+
+```bash
+pi mcp add ardour_http --url http://127.0.0.1:4820/mcp
+```
+
+To see [Ardour's MCP
+server](https://manual.ardour.org/using-control-surfaces/mcp-http/)
+for the instructions to start the MCP server on Ardour's side.
+
 ## Troubleshooting
 
 ### Pi keeps asking permissions on things that are allowed.

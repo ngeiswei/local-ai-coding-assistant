@@ -177,17 +177,34 @@ Feel free to modify the permissions as you see fit.
 
 ## Use Pi as MCP client
 
-You can easily connect to MCP servers with Pi.  For instance to
-connect to the [Ardour](https://ardour.org/) MCP server type in a
-terminal the following command:
+You can easily connect to MCP servers with Pi.
+
+### Connect to Ardour's MCP server
+
+To connect to the [Ardour](https://ardour.org/) MCP server type in a
+terminal the following command under the folder of the project you
+wish to work on while connecting (this allows only to enable the MCP
+client while working on this project):
 
 ```bash
-pi mcp add ardour_http --url http://127.0.0.1:4820/mcp
+pi mcp add ardour_http --local --url http://127.0.0.1:4820/mcp
 ```
 
 To see [Ardour's MCP
 server](https://manual.ardour.org/using-control-surfaces/mcp-http/)
 for the instructions to start the MCP server on Ardour's side.
+
+### Connect to Blender's MCP server
+
+First, install the [MCP blender extension](https://www.blender.org/lab/mcp-server/).
+
+Second, under your project folder of interest type the following:
+
+```bash
+pi mcp add blender_http --local --url http://localhost:9876/mcp
+```
+
+WARNING: it does not work.
 
 ## Troubleshooting
 

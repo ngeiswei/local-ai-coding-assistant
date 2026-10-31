@@ -196,15 +196,29 @@ for the instructions to start the MCP server on Ardour's side.
 
 ### Connect to Blender's MCP server
 
-First, install the [MCP blender extension](https://www.blender.org/lab/mcp-server/).
+To connect to Blender follow the instructions provided [here](https://www.blender.org/lab/mcp-server/), which are summed up below:
 
-Second, under your project folder of interest type the following:
+1. Install the [MCP blender extension](https://www.blender.org/lab/mcp-server/).
+2. Build the [Blender MCP Server](https://projects.blender.org/lab/blender_mcp).
+3. Under the project folder you wish to connect Pi to Blender, add the following file `MY_PROJECT/.pi/mcp.json` with content
 
-```bash
-pi mcp add blender_http --local --url http://localhost:9876/mcp
+```
+{
+  "mcpServers": {
+    "blender": {
+      "command": "BLENDER_MCP_SERVER_PATH/mcp/.venv/bin/blender-mcp",
+      "args": [],
+      "env": {
+        "BLENDER_MCP_HOST": "localhost",
+        "BLENDER_MCP_PORT": "9876"
+      }
+    }
+  }
+}
 ```
 
-WARNING: it does not work.
+where `BLENDER_MCP_SERVER_PATH` is the absolute path where
+`blender_mcp` has been built.
 
 ## Troubleshooting
 
